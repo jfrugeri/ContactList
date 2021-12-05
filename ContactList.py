@@ -7,18 +7,18 @@ while True:
     numero = input('Digite o numero: ')
     # adiciona a tupla (nome, idade, numero) na lista de contatos
     contatos.append((nome, idade, numero))
-    entrada = input("Deseja sair?\n")
+    entrada = input("Deseja sair? sim(s) nao(n)\n")
     if entrada.lower() == "s":
         break # sai do while
 
-maiores = []
-menores = []
+lista1 = []
+lista2 = []
 # separa os contatos por idade
 for contato in contatos:
     if contato[1] >= 18:
-        maiores.append(contato)
+        lista1.append(contato)
     else:
-        menores.append(contato)
+        lista2.append(contato)
 
-print(maiores)
-print(menores)
+print(lista1)
+print(lista2)
